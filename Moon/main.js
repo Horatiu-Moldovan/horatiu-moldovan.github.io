@@ -9,7 +9,11 @@ var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanva
 	var scene = new THREE.Scene();
 	var scene2 = new THREE.Scene();
 
+	
+
 	var light1 = new THREE.PointLight(0x00ffff, 0.7);
+	
+	
 	
 	var light2 = new THREE.PointLight(0xffffff, 3);
 	light2.position.set(-500, 1000, 1000);
@@ -48,6 +52,7 @@ var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanva
 	scene.add(mesh);
 	
 	
+
 	
 	var text2 = document.createElement('div');
 	text2.style.position = 'absolute';
@@ -56,7 +61,7 @@ var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanva
 	//text2.style.width = 200;
 	//text2.style.height = 200;
 	text2.style.backgroundColor = "black";
-	text2.innerHTML = "&copy; 2017 Horatiu Moldovan <br> Moon terrain: NASA";
+	text2.innerHTML = "&copy; 2017 Horatiu Moldovan <br> Moon terrain: NASA <br> soundtrack: Connect.Ohm - Snow Park";
 	text2.style.top = 50 + 'px';
 	text2.style.left = 50 + 'px';
 	document.body.appendChild(text2);
@@ -79,7 +84,7 @@ var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanva
 		sound.setVolume(0.5);
 		sound.play();
 		});
-
+		
 	window.addEventListener( 'resize', onWindowResize, false );
 
 	function onWindowResize(){
@@ -92,8 +97,10 @@ var renderer = new THREE.WebGLRenderer({canvas: document.getElementById('myCanva
 	
 	requestAnimationFrame(render);
 	
-	
+
+
 	function render(){
+	
 	
 	
     	//mesh.rotation.x += 0.01;
